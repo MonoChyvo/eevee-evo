@@ -1,0 +1,165 @@
+:root {
+  --color1: -webkit-linear-gradient(#830000, #ff2929);
+  --color2: -webkit-linear-gradient(#bbbb00, #ffff4a);
+  --color3: -webkit-linear-gradient(#0055ff, #00f2ff);
+  --color4: -webkit-linear-gradient(#098d00, #29ff5f);
+  --color5: -webkit-linear-gradient(#00e1ff, #aef8ff);
+  --color6: -webkit-linear-gradient(#640093, #e74aff);
+  --color7: -webkit-linear-gradient(#011500, #a5a5a5);
+  --color8: -webkit-linear-gradient(#ff00fb, #32eaff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.containter {
+  width: 90vw;
+  height: 91vh;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  width: 180px;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover .texto {
+  opacity: 1;
+  transition: 0.9s;
+}
+.box:hover .pokemon {
+  transform: rotate(360deg) translateY(-27px) scale(2.9);
+  transition: 0.9s;
+}
+.box:hover .pokeball {
+  transform: scale(0);
+  transition: 0.9s;
+}
+.box .texto {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 0;
+  opacity: 0;
+  transition: 0.6s;
+}
+.box .texto .tipo {
+  width: 3rem;
+  height: 3rem;
+}
+.box .texto p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: whitesmoke;
+}
+.box .texto #color1 {
+  background: var(--color1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .texto #color2 {
+  background: var(--color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .texto #color3 {
+  background: var(--color3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .texto #color4 {
+  background: var(--color4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .texto #color5 {
+  background: var(--color5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .texto #color6 {
+  background: var(--color6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .texto #color7 {
+  background: var(--color7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .texto #color8 {
+  background: var(--color8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .texto1 {
+  display: flex;
+  position: absolute;
+  width: 80%;
+  height: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 0;
+}
+.box .texto1 .tipo {
+  width: 3rem;
+  height: 3rem;
+}
+.box .texto1 p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: whitesmoke;
+  text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+.box .picture {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+.box .picture .pokemon {
+  position: absolute;
+  bottom: 10px;
+  width: 60px;
+  height: 60px;
+  transition: 0.9s;
+}
+.box .picture .uno {
+  position: absolute;
+  bottom: -5px;
+  width: 140px;
+  height: 140px;
+}
+.box .picture .pokeball {
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  z-index: 10;
+  transition: 0.6s;
+}/*# sourceMappingURL=style.css.map */
